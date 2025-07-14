@@ -1,0 +1,88 @@
+@media (max-width: 1500px) {
+  .progress-section__content {
+    padding: 40px 28px 28px 50px;
+  }
+  .progress-section__col-icon,
+  .progress-step__icon {
+    width: 64px;
+    height: 64px;
+  }
+  .progress-step__icon-img {
+    width: 28px;
+    height: 28px;
+  }
+  .progress-step__arrow-img {
+    width: 22px;
+    height: 22px;
+  }
+  .progress-section__col-title {
+    max-width: 60px;
+  }
+  .progress-section__col-next {
+    margin-right: 30px;
+    margin-left: 30px;
+  }
+}
+@media (max-width: 1000px) {
+  .progress-section__content {
+    padding: 28px 16px 16px 24px;
+  }
+  .progress-section__col-icon,
+  .progress-step__icon {
+    width: 48px;
+    height: 48px;
+  }
+  .progress-step__icon-img {
+    width: 20px;
+    height: 20px;
+  }
+  .progress-step__arrow-img {
+    width: 12px;
+    height: 12px;
+  }
+  .progress-section__col-title {
+    max-width: 50px;
+  }
+  .progress-section__col-next {
+    margin-right: 15px;
+    margin-left: 15px;
+  }
+}
+
+@media (max-width: 500px) {
+  .progress-section__tab {
+    padding: 0;
+    padding-top: 18px;
+  }
+  .progress-section__tab-active {
+    width: 110px;
+    height: 50px;
+  }
+  .progress-section__tab-title {
+    font-size: 14px;
+  }
+  .progress-section__content {
+    padding: 16px 6px 6px 10px;
+  }
+  .progress-section__col-icon,
+  .progress-step__icon {
+    width: 36px;
+    height: 36px;
+  }
+  .progress-step__icon-img {
+    width: 14px;
+    height: 14px;
+  }
+  .progress-step__arrow-img {
+    width: 8px;
+    height: 8px;
+  }
+  .progress-section__col-title {
+    max-width: 40px;
+  }
+  .progress-section__col-next {
+    margin-right: 5px;
+    margin-left: 5px;
+  }
+}
+

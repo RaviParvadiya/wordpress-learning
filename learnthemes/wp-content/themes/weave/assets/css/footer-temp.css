@@ -1,0 +1,118 @@
+.site-footer {
+  border: 1px solid #3a3f51;
+  background: #2b3044;
+  padding-top: 86px;
+}
+
+.footer-container {
+  /* max-width: 1200px; */
+  margin: 0 auto;
+  /* padding: 0 20px; */
+}
+
+.footer-row-wrapper {
+  margin: 0 auto;
+  padding-bottom: 55px;
+  position: relative;
+}
+
+.footer-row-wrapper::after {
+  content: "";
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 100%;
+  max-width: 1321px; /* Adjust this to match your content width */
+  height: 1px;
+  background-color: #3a3f51;
+}
+
+.footer-row {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 2rem; */
+}
+
+.footer-col {
+  /* flex: 1; */
+  min-width: 200px;
+}
+
+.footer-heading {
+  color: #fff;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 24px;
+  line-height: 16px;
+  margin-bottom: 30px;
+}
+
+.site-footer ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.site-footer ul > li {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #bbbec7;
+  margin-bottom: 5px;
+}
+
+.site-footer ul > li:last-child {
+  margin-bottom: 0;
+}
+
+/* Social icons section */
+.footer-social {
+  margin-top: 20px;
+}
+
+.footer-social-icons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.footer-social-icons img:hover {
+  opacity: 0.8;
+}
+
+.footer-social-icons-ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 37px;
+  height: 37px;
+  border-radius: 50%;
+}
+
+.footer-social-icons-ellipse-facebook {
+  background: #3a589b;
+}
+
+.footer-social-icons-ellipse-pinterest {
+  background: #ca2028;
+}
+
+.footer-payment-cards {
+  margin-top: 11px;
+  padding-left: 7px;
+}
+
+.footer-payment-card-icons {
+  display: flex;
+  gap: 5px;
+  align-items: center;
+}
+
+.footer-text {
+  color: #bbbec7;
+  font-size: 14px;
+  margin-top: 35px;
+  margin-bottom: 35px;
+}

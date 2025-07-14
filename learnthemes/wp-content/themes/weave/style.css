@@ -1,0 +1,119 @@
+/* 
+Theme Name: Weave
+Author: Ravi Parvadiya
+Author URI: https://github.com/RaviParvadiya
+Description: A clean and modern WordPress theme built for creative and textile-based businesses, based on a Figma prototype.
+Requires at least: 6.7
+Tested up to: 6.8
+Requires PHP: 7.0
+Version: 1.0.0
+License: GNU General Public License v2 or later
+License URI: https://www.gnu.org/licenses/gpl-2.0.html
+Text Domain: weave
+*/
+
+html {
+  box-sizing: border-box;
+}
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+*,
+*::before,
+*::after {
+  box-sizing: inherit;
+}
+
+.container {
+  max-width: 1321px;
+  margin: 0 auto;
+  width: 100%;
+  /* border: 1px solid black; */
+}
+
+/* === Modern CSS Reset (2025) with Margin Cleanup === */
+
+*,
+*::before,
+*::after {
+  box-sizing: border-box;
+}
+
+:where(html, body) {
+  margin: 0;
+  padding: 0;
+  height: 100%;
+  width: 100%;
+  font-family: "Questrial", sans-serif;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  scroll-behavior: smooth;
+  text-rendering: optimizeLegibility;
+}
+
+/* Remove default margin from common block elements */
+:where(h1, h2, h3, h4, h5, h6, p, blockquote, figure, dl, dd) {
+  margin: 0;
+}
+
+/* Lists */
+ul,
+ol {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+/* Images and media */
+img,
+picture,
+video,
+canvas,
+svg {
+  display: block;
+  max-width: 100%;
+  height: auto;
+}
+
+/* Form elements */
+input,
+button,
+textarea,
+select {
+  font: inherit;
+  color: inherit;
+  margin: 0;
+  padding: 0;
+  border: none;
+  background: none;
+  outline: none;
+}
+
+/* Buttons */
+button {
+  cursor: pointer;
+  background-color: transparent;
+}
+
+/* Links */
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+/* Tables */
+table {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+/* Hidden attribute */
+[hidden] {
+  display: none !important;
+}
+

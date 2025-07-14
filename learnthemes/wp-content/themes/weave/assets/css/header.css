@@ -1,0 +1,239 @@
+.top-header {
+  background: #a57f6a;
+  border: 1px solid #d5c3b9;
+  margin-bottom: 30px;
+}
+
+.top-header__container {
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  height: 50px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.top-header__left,
+.top-header__right {
+  display: flex;
+  align-items: center;
+  gap: 24px;
+}
+
+.top-header__email,
+.top-header__item {
+  display: flex;
+  flex-direction: row;
+  gap: 5px;
+}
+
+.top-header__email img {
+  /* margin-right: 2px; */
+  vertical-align: middle;
+}
+
+.top-header__separator {
+  color: #d5c3b9;
+  font-size: 16px;
+  font-weight: 400;
+  line-height: 1;
+  user-select: none;
+}
+
+.top-header__item--signup span {
+  line-height: 13px;
+}
+
+.top-header__item {
+  gap: 8px !important;
+}
+
+.top-header__item img {
+  vertical-align: middle;
+  /* margin-right: 6px; */
+}
+
+.main-header {
+  background: #fff;
+  margin-bottom: 35px;
+}
+
+.logo-header__row {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-header {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.logo-header__search-box {
+  display: flex;
+  align-items: center;
+  position: relative; /* for future-proofing, but not strictly needed here */
+}
+
+.logo-header__search-box {
+  display: flex;
+  align-items: center;
+}
+
+.logo-header__search-input {
+  width: 583px;
+  height: 44px;
+  border: 1px solid #ddd;
+  border-radius: 5px 0px 0px 5px;
+}
+
+.logo-header__search-input::placeholder {
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  padding: 15px 15px;
+}
+
+.logo-header__search-button {
+  width: 44px;
+  height: 44px;
+  border-radius: 0px 5px 5px 0px;
+  background: #2b6044;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  border: none;
+  margin-left: -1px;
+}
+
+.logo-header__search-button img {
+  display: block;
+  max-width: 20px;
+  max-height: 20px;
+  width: auto;
+  height: auto;
+}
+
+.logo-header__item {
+  margin-left: 20px;
+  display: flex;
+  flex-direction: row;
+  gap: 4px;
+}
+
+.logo-header__item--cart span {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+}
+
+.navbar {
+  background: #fff;
+  margin-top: 30px;
+  /* margin-left: 130px;
+  margin-right: 130px; */
+  border-top: 2px solid #ededed;
+  border-bottom: 2px solid #ededed;
+}
+
+.navbar nav {
+  display: flex;
+  align-items: center;
+  height: 48px;
+}
+
+.navbar ul {
+  display: flex;
+  gap: 40px;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.navbar li {
+  /* No extra styles needed unless you want more control */
+}
+
+.navbar a {
+  font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 15px;
+  line-height: 15px;
+  color: #000;
+  text-decoration: none;
+  transition: color 0.2s;
+}
+
+.navbar a:hover {
+  color: #a57f6a;
+}
+
+/* Hide toggler above 1000px, show below */
+.navbar__toggle {
+  display: none;
+  background: none;
+  border: none;
+  font-size: 2rem;
+  cursor: pointer;
+}
+
+/* Sidebar nav styles */
+.sidebar-nav {
+  position: fixed;
+  top: 0;
+  right: -300px;
+  width: 260px;
+  height: 100%;
+  background: #fff;
+  box-shadow: -2px 0 8px rgba(0, 0, 0, 0.15);
+  z-index: 2000;
+  transition: right 0.3s;
+  display: flex;
+  flex-direction: column;
+  padding: 32px 20px 20px 20px;
+}
+.sidebar-nav.active {
+  right: 0;
+}
+.sidebar-nav__close {
+  background: none;
+  border: none;
+  font-size: 2rem;
+  align-self: flex-end;
+  cursor: pointer;
+  margin-bottom: 24px;
+}
+.sidebar-nav nav ul {
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 18px;
+}
+.sidebar-nav nav a {
+  font-size: 1.1rem;
+  color: #222;
+  font-family: "Questrial", sans-serif;
+  transition: color 0.2s;
+}
+.sidebar-nav nav a:hover {
+  color: #a57f6a;
+}
+.sidebar-nav__overlay {
+  display: none;
+}
+.sidebar-nav.active ~ .sidebar-nav__overlay {
+  display: block;
+  position: fixed;
+  z-index: 1999;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.3);
+}
