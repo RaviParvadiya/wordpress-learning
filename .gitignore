@@ -1,0 +1,57 @@
+# # System files
+# .DS_Store
+# Thumbs.db
+# *.log
+# *.tmp
+
+# # Editor directories
+# .vscode/
+# .idea/
+# *.sublime-workspace
+# *.sublime-project
+
+# # OS generated files
+# ehthumbs.db
+# Icon?
+
+# # Node/npm artifacts
+# node_modules/
+# npm-debug.log
+# yarn-debug.log
+# yarn-error.log
+
+# # Composer vendor directory
+# /vendor/
+
+# # Environment files
+# .env
+# .env.*
+
+# # WordPress uploads and logs
+# # Global ignores for all projects
+# *.log
+# *.tmp
+# *.cache
+# .DS_Store
+# Thumbs.db
+# node_modules/
+# vendor/
+# .env
+# .env.*
+# notes.txt
+# bak/
+
+# # Database dumps and backups
+# *.sql
+# *.sql.gz
+# *.bak
+# *.backup
+
+# # Other backup files
+# *~
+# *.swp
+# *.swo
+
+# # Ignore custom backup and temp files
+# bak/
+# tmp.txt
