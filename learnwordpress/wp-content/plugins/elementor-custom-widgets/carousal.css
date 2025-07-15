@@ -1,0 +1,105 @@
+.bx-wrapper {
+  max-width: 1140px;
+  position: relative;
+  margin: 0 auto !important;
+  padding: 0;
+}
+
+.bx-viewport {
+  width: 100%;
+  overflow: hidden;
+  position: relative;
+  height: 123px;
+}
+
+.rpp-list {
+  width: 1215%;
+  position: relative;
+  transition-duration: 0s;
+  transform: translate3d(-2000px, 0px, 0px);
+  display: flex;
+  flex-wrap: wrap;
+  height: 123px;
+  overflow: hidden;
+  list-style: none;
+}
+
+.rpp-list li {
+  float: left;
+  list-style: none;
+  position: relative;
+  width: 380px;
+  padding: 5px 10px;
+}
+
+.rpp-list .rpp-item {
+  width: 100%;
+  padding: 20px 15px;
+  box-sizing: border-box;
+  display: flex;
+  flex-wrap: wrap;
+  background: #fff;
+  border-radius: 5px;
+  box-shadow: 1px 0px 5px rgba(0, 0, 0, 0.12);
+}
+
+.rpp-list .rpp-img {
+  width: 44px;
+  height: 44px;
+  overflow: hidden;
+  margin-right: 15px;
+  border: solid 1px #ddd;
+  box-sizing: border-box;
+}
+
+.rpp-list .rpp-img img {
+  width: 44px;
+  height: 44px;
+  object-fit: cover;
+}
+
+.rpp-list .rpp-info {
+  width: calc(100% - 59px);
+}
+
+.rpp-list .rpp-info p {
+  font-size: 15px;
+  font-weight: 400;
+  color: #555;
+  line-height: 25px;
+  margin-bottom: 5px;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+
+.rpp-list .post-ago {
+  font-size: 13px;
+  color: #888;
+}
+
+.bx-pager {
+  display: flex;
+  justify-content: center;
+  margin-top: 10px;
+}
+.bx-pager-link {
+  display: block;
+  text-indent: -9999px;
+  width: 10px;
+  height: 10px;
+  border-radius: 5px;
+  background: #aaa;
+  color: #333;
+  margin: 0 5px;
+  text-decoration: none;
+  transition: background 0.2s;
+}
+.bx-pager-link.active {
+  background: #c30;
+}
+.bx-pager-link:hover {
+  background: #c30;
+}

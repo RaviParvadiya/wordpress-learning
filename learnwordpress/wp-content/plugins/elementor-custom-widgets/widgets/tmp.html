@@ -1,0 +1,215 @@
+<div class="hfs-form-box">
+  <h2>Let's get you started</h2>
+  <div class="form-row">
+    <div class="form-col">
+      <div class="fluid-input">
+        <label class="fi-label" for="your-name">Your Name</label>
+        [text* your-name id:your-name class:fi-control placeholder " "]
+      </div>
+    </div>
+
+    <div class="form-col">
+      <div class="fluid-input fluid-phone">
+        <div class="phone-container">
+          <input type="text" class="isd-code" value="IND +91" readonly />
+          [tel* mobile-number id:mobile-number class:fi-control placeholder " "]
+        </div>
+        <label class="fi-label" for="mobile-number">Mobile Number</label>
+      </div>
+    </div>
+
+    <div class="form-col">
+      <div class="fluid-input">
+        <label class="fi-label" for="your-email">Email ID</label>
+        [email* your-email id:your-email class:fi-control placeholder " "]
+      </div>
+    </div>
+
+    <div class="form-col">
+      <div class="fluid-input">
+        <label class="fi-label" for="cityname">Choose your location</label>
+        [text* cityname id:cityname class:fi-control placeholder " "]
+      </div>
+    </div>
+
+    <div class="form-col full-width">
+      <div class="static-label">You are</div>
+      <div class="cr-btn-list">
+        <div class="radio-btn">
+          [radio member_type use_label_element default:1 "Owner"]
+        </div>
+        <div class="radio-btn">
+          [radio member_type use_label_element "Agent"]
+        </div>
+        <div class="radio-btn">
+          [radio member_type use_label_element "Builder"]
+        </div>
+      </div>
+    </div>
+
+    <div class="form-col full-width">
+      <div class="static-label">You are here to</div>
+      <div class="cr-btn-list">
+        <div class="radio-btn">
+          [radio prop_for use_label_element default:1 "Sell"]
+        </div>
+        <div class="radio-btn">
+          [radio prop_for use_label_element "Rent/Lease"]
+        </div>
+        <div class="radio-btn">[radio prop_for use_label_element "PG"]</div>
+      </div>
+    </div>
+  </div>
+
+  <div class="form-footer">[submit class:btn-ppf-submit "Continue"]</div>
+</div>
+
+<!-- 
+<style>
+	* {
+		margin: 0px;
+		padding: 0px;
+	}
+	h3 {
+		margin-block-start: 0px !important;
+	}
+	h3, p {
+		margin-block-end: 0px !important;
+	}
+	br {
+		display: none;
+	}
+	.phone-container p {
+		display: flex;
+	}
+	.hfs-form-box {
+        background: #fff;
+        padding: 25px;
+		border: 1px solid #ddd;
+        border-radius: 15px;
+        font-family: Arial, sans-serif;
+		box-sizing: border-box;
+        box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+     }
+	.hfs-form-box h2 {
+        font-size: 22px;
+        font-weight: 400;
+        color: #444;
+		line-height: 30px;
+		position: relative;
+        margin-bottom: 25px;
+		padding-bottom: 7px;
+     }
+	.hfs-form-box h2:after {
+    	content: '';
+    	position: absolute;
+    	bottom: 0;
+    	left: 0;
+    	width: 60px;
+    	height: 3px;
+    	background: #d21a1f;
+	}
+	.form-row {
+    	display: flex;
+    	flex-wrap: wrap;
+    	margin-left: -10px;
+    	margin-right: -10px;
+	}
+	.form-row .form-col {
+    	width: 50%;
+    	box-sizing: border-box;
+    	padding-left: 10px;
+    	padding-right: 10px;
+    	margin-bottom: 20px;
+	}
+	.form-col span {
+		position: static !important;
+	}
+	.fluid-input {
+    	position: relative;
+	}
+	.phone-container {
+/* 		display: flex; */
+	}
+	.phone-container .isd-code {
+    	width: 71px;
+    	flex-shrink: 0;
+    	font-family: 'Roboto',sans-serif;
+    	padding: 10px;
+    	font-size: 14px;
+    	line-height: 20px;
+    	border-radius: 5px 0 0 5px;
+    	border: 1px solid #ccc;
+    	border-right-width: 0;
+    	outline: none;
+    	text-align: center;
+    	color: #666;
+    	pointer-events: none;
+    	cursor: not-allowed;
+	}
+	.fluid-input .fi-control {
+    	font-family: 'Roboto',sans-serif;
+    	width: 100%;
+    	box-sizing: border-box;
+    	padding: 10px;
+    	font-size: 14px;
+    	line-height: 20px;
+    	border-radius: 5px;
+    	border: 1px solid #ccc;
+    	outline: none;
+	}
+	.phone-container .fi-control {
+    	border-radius: 0px 5px 5px 0;
+	}
+	.fluid-input .fi-label {
+    	font-size: 14px;
+    	color: #999;
+    	position: absolute;
+    	top: 12px;
+    	left: 10px;
+    	line-height: 20px;
+    	transition: all 0.3s ease;
+    	cursor: text;
+	}
+	.fluid-phone .fi-label {
+    	left: 80px;
+	}
+	.fluid-input:has(.fi-control:focus) .fi-label,
+	.fluid-input:has(.fi-control:not(:placeholder-shown)) .fi-label {
+  		font-size: 12px;
+  		top: -8px;
+  		color: #666;
+  		line-height: 16px;
+  		padding: 0 5px;
+  		background: #fff;
+	}
+	.cr-btn-list {
+		display: flex;
+	}
+	.hfs-form-box .form-footer {
+    	border-top: 1px solid #eee;
+    	padding-top: 20px;
+    	text-align: center;
+	}
+	.form-footer .btn-ppf-submit {
+    	font-family: 'Roboto',sans-serif;
+    	display: inline-block;
+/*     	padding: 12px 30px; */
+    	border-radius: 25px;
+    	font-size: 16px;
+    	font-weight: 500;
+    	color: #fff;
+    	background: #e86328;
+    	border: none;
+    	width: 280px;
+    	max-width: 100%;
+    	cursor: pointer;
+	}
+	.static-label {
+    	font-size: 16px;
+    	line-height: 25px;
+    	color: #444;
+    	margin-bottom: 5px;
+	}
+</style>
+-->

@@ -1,0 +1,6 @@
+// DONE: container system done, assign product to container done
+// DONE: need to try store date in a week format like if container will available or expected arrived in week 2
+// DONE: on frontend side for each product load product using ajax and check if it is available in any container that are departure and show on add to cart button like expected delivery in week 2.
+// DONE: if product is not coming from any container but in future it will then show it liek expected product in week 12
+// TODO: same product on different container with its own quantity, calculate total do something with total sale, if order is placed then product should be label or whatever from the first container that will arrived among all containers that include that product
+// TODO: handle manual stock like orders made from offline store/shop. Update container product data like what products added/removed from particular container
