@@ -1,0 +1,202 @@
+.portfolio-admin-container {
+  max-width: 800px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 18px;
+  box-shadow: 0 8px 32px rgba(60, 60, 120, 0.15);
+  padding: 40px 32px 32px 32px;
+}
+
+.portfolio-admin-container h1 {
+  font-size: 2.5rem;
+  font-weight: 800;
+  color: #5b6694;
+  margin-bottom: 24px;
+  letter-spacing: 1px;
+}
+
+.portfolio-admin-container h2 {
+  font-size: 1.2rem;
+  color: #9132a9;
+  margin-top: 28px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.portfolio-admin-container input[type="text"],
+.portfolio-admin-container textarea,
+.portfolio-admin-container select {
+  width: 100%;
+  padding: 12px 14px;
+  border-radius: 8px;
+  border: 1px solid #e0e0e0;
+  background: #f7f8fa;
+  margin-bottom: 12px;
+  font-size: 1rem;
+  transition: border 0.2s;
+}
+
+.portfolio-admin-container input[type="text"]:focus,
+.portfolio-admin-container textarea:focus,
+.portfolio-admin-container select:focus {
+  border: 1.5px solid #9132a9;
+  outline: none;
+  background: #fff;
+}
+
+.portfolio-admin-container .button-primary,
+.portfolio-admin-container button[type="button"] {
+  background: linear-gradient(45deg, #64d7f0, #9e3ab1);
+  color: #fff;
+  border: none;
+  border-radius: 30px;
+  padding: 10px 32px;
+  font-size: 1rem;
+  font-weight: 700;
+  margin-top: 18px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 10px rgba(158, 58, 177, 0.1);
+  transition: background 0.2s, box-shadow 0.2s;
+  cursor: pointer;
+}
+
+.portfolio-admin-container .button-primary:hover,
+.portfolio-admin-container button[type="button"]:hover {
+  background: linear-gradient(45deg, #9e3ab1, #64d7f0);
+  box-shadow: 0 4px 20px rgba(158, 58, 177, 0.18);
+}
+
+.portfolio-admin-container .skill-item,
+.portfolio-admin-container .project-item {
+  background: #f3f0fa;
+  border-radius: 10px;
+  padding: 16px 18px 10px 18px;
+  margin-bottom: 12px;
+  box-shadow: 0 2px 8px rgba(145, 50, 169, 0.04);
+}
+
+.portfolio-admin-container label {
+  font-weight: 600;
+  color: #5b6694;
+}
+
+@media (max-width: 600px) {
+  .portfolio-admin-container {
+    padding: 18px 6px;
+  }
+}
+
+.skills-selection {
+  margin-bottom: 30px;
+}
+
+.skills-selection h3 {
+  color: #9132a9;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.skills-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+  gap: 10px;
+  margin-bottom: 20px;
+}
+
+.skill-checkbox {
+  display: flex;
+  align-items: center;
+  padding: 10px;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  cursor: pointer;
+  transition: all 0.2s;
+  background: #f7f8fa;
+}
+
+.skill-checkbox:hover {
+  border-color: #9132a9;
+  background: #f3f0fa;
+}
+
+.skill-checkbox input[type="checkbox"] {
+  margin-right: 10px;
+  transform: scale(1.2);
+}
+
+.skill-checkbox input[type="checkbox"]:checked + .skill-label {
+  color: #9132a9;
+  font-weight: 600;
+}
+
+.skill-label {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+}
+
+.skill-icon {
+  width: 20px;
+  height: 20px;
+  object-fit: contain;
+}
+
+.custom-skills h3 {
+  color: #9132a9;
+  margin-bottom: 15px;
+  font-size: 1.1rem;
+}
+
+.skill-item {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 10px;
+  align-items: center;
+}
+
+.skill-item input {
+  flex: 1;
+}
+
+.remove-skill {
+  background: #ff6a00;
+  color: white;
+  border: none;
+  border-radius: 50%;
+  width: 30px;
+  height: 30px;
+  cursor: pointer;
+  font-size: 16px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.remove-skill:hover {
+  background: #ee0979;
+}
+
+#add-custom-skill {
+  background: linear-gradient(45deg, #00c6ff, #0072ff);
+  color: white;
+  border: none;
+  border-radius: 20px;
+  padding: 8px 16px;
+  cursor: pointer;
+  font-weight: 600;
+}
+
+#add-custom-skill:hover {
+  background: linear-gradient(45deg, #0072ff, #00c6ff);
+}
+
+@media (max-width: 768px) {
+  .skills-grid {
+    grid-template-columns: repeat(auto-fill, minmax(150px, 1fr));
+  }
+
+  .skill-item {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
