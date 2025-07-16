@@ -1,0 +1,688 @@
+@media screen and (max-width: 1600px) {}
+
+@media screen and (max-width: 1440px) {}
+
+@media screen and (max-width: 1300px) {
+    .selling_home_dls {
+        padding: 0 60px;
+    }
+
+    .footer_sec {
+        padding: 80px 60px;
+    }
+
+    .top_headbar.fixed,
+    .top_headbar {
+        padding: 25px 60px 25px 60px;
+    }
+
+    .result_perk_forms {
+        max-width: 100%;
+        width: auto;
+        margin: 0 60px;
+    }
+
+    .real_estate_sec {
+        margin: 50px 60px 0;
+        max-width: 100%;
+        width: auto;
+    }
+
+    .real_estate_wrap {
+        gap: 60px;
+    }
+
+    .left_estate_wrap {
+        width: 100%;
+        max-width: 40%;
+    }
+
+    .left_estate_wrap img {
+        width: 100%;
+    }
+
+    .right_estate_wrap {
+        width: 100%;
+        max-width: 60%;
+    }
+
+    .client_testimonial {
+        padding-left: 60px;
+    }
+
+    .frequen_sec {
+        max-width: 100%;
+        margin: 0 60px 110px;
+        width: auto;
+    }
+    .full_height_100vh_home{}
+}
+
+@media screen and (max-width: 1200px) {
+    .main_navs_menu ul li a {
+        padding: 8px 20px 8px 20px;
+    }
+
+    .selling_home_sec {
+        max-width: 280px;
+    }
+    .home_table_cell_center{
+        padding-left: 100px;
+    }
+}
+
+@media screen and (max-width: 1024px) {
+    .tablate {
+        display: none;
+    }
+
+    .mobile_menus {
+        display: block;
+    }
+
+    .main_logo a {}
+
+    .right_side_menus {
+        gap: 10px;
+    }
+
+    .main_navs_menu ul li a {
+        padding: 8px 15px 8px 15px;
+    }
+
+    .selling_home_sec h4 {
+        font-size: 26px;
+    }
+
+    .selling_home_sec {
+        max-width: 250px;
+    }
+
+    .find_neighbor .slider_first_cell_center h2 {
+        font-size: 36px;
+    }
+
+    .find_neighbor .input_forms_zip input {
+        max-width: 65%;
+    }
+
+    .find_neighbor .slider_first_cell {
+        padding-top: 50px;
+        padding-bottom: 50px;
+    }
+
+    /* about_the_owner */
+    .home_table_cell_center{    
+        padding-left: 0px;
+        padding: 0 50px;
+    }
+
+    .right_contact_banner_dls{
+        padding: 0
+    }
+    .realEstateInvestorSection{
+        margin-top: 80px;
+        padding: 30px 20px 15px;
+    }
+    .realEstateInvestorSection .image img{
+        max-width: calc(100% - 100px);
+    }
+    .ourGuarantee .formBox .subtitle span{
+        font-size: 12px;
+    }
+    .ourGuarantee .formBox .title h3{
+        font-size: 28px;
+        margin: 3px 0;
+    }
+    .ourGuarantee .formBox .desc p{
+        font-size: 14px;
+        margin-bottom: 10px;
+        line-height: 1.5;
+    }
+    .ourGuarantee .formBox input, .ourGuarantee .formBox textarea {
+        margin-bottom: 14px;
+        font-size: 14px;
+        padding: 10px 0;
+    }
+    .ourGuarantee .formBox input::placeholder,
+    .ourGuarantee .formBox textarea::placeholder {    
+        font-size: 14px;
+    }
+    .ourGuarantee .formBox{
+        padding: 30px;    
+    }
+}
+
+@media screen and (max-width: 991px) {
+    .slider_first_cell_center {
+        padding: 0 60px;
+    }
+
+    .result_perk_forms {
+        margin: 0;
+    }
+
+    .slider_first_cell_center h1 {
+        font-size: 42px;
+    }
+
+    .slider_first_cell_center p {
+        margin: 0px auto 40px;
+    }
+
+    .result_perk_forms {
+        padding: 40px;
+    }
+
+    .result_perk_forms h2 {
+        font-size: 42px;
+    }
+
+    .selling_home_dls h2 {
+        font-size: 42px;
+        margin-bottom: 53px;
+    }
+
+    .selling_home_boxes {
+        flex-direction: column;
+        gap: 22px;
+    }
+
+    .selling_home_sec {
+        max-width: 100%;
+        padding: 0;
+        text-align: center;
+    }
+
+    .selling_home_sec h4 {
+        margin-bottom: 20px;
+        font-size: 24px;
+    }
+
+    .selling_home_sec p {
+        width: 100%;
+        max-width: 354px;
+        margin: auto;
+    }
+
+    .dividers {
+        width: 136px;
+        background: #E4E3E3;
+        height: var(--Radius-Sharp, 1px);
+        margin: auto;
+    }
+
+    .find_neighbor .input_forms_zip input {
+        max-width: 100%;
+        font-size: 16px;
+        padding: 7px 22px 7px;
+        height: 43px;
+    }
+
+    .frequen_sec_dls .accordion-button {
+        padding: var(--Spacing-ml, 14px) 18px;
+    }
+
+    .left_slide_dls h2 {
+        font-size: 30px;
+    }
+    .client_testi .owl-stage{
+        padding-left:0 !important;
+        padding-bottom:50px 
+    }
+    .contact_banner_dls{
+        flex-direction: column;
+        row-gap: 20px;
+        text-align: center;
+    }
+    .ourGuarantee .img img{        
+        min-height: 500px;
+    }
+}
+
+@media screen and (max-width: 768px) {}
+
+@media screen and (max-width: 767px) {
+
+    .desktop {
+        display: none !important;
+    }
+
+    .mobile {
+        display: block !important;
+    }
+
+    .container {
+        padding: 0 20px;
+    }
+
+    .footer_sec {
+        padding: 50px 0;
+    }
+
+    .top_sec_footer {
+        text-align: center;
+        gap: 70px;
+    }
+
+    .top_sec_dls_title h2 {
+        text-transform: math-auto;
+    }
+
+    .top_sec_dls_title {
+        gap: 25px;
+    }
+
+    .top_sec_dls_title p {
+        max-width: 268px;
+        margin: auto;
+    }
+
+    .top_sec_dls {
+        gap: var(--Spacing-xl, 38px);
+    }
+
+    .send_msg_foo a {
+        margin: auto;
+        width: fit-content;
+    }
+
+    .send_msg_foo {
+        width: 100%;
+    }
+
+    .bottom_first_sec ul {
+        flex-wrap: wrap;
+        justify-content: center;
+        row-gap: 5px;
+    }
+
+    .bottom_first_sec {
+        max-width: 225px;
+        margin: auto;
+    }
+
+    .bottom_last_sec {
+        flex-direction: column;
+        gap: 37px;
+        align-items: center;
+    }
+
+    .signup_foo {
+        flex-direction: column;
+        gap: 32px;
+        align-items: center;
+    }
+
+    .bottom_last_one {
+        align-items: center;
+        gap: 32px;
+    }
+
+    .signup_dls {
+        align-items: center;
+    }
+
+    .bottom_last_two {
+        align-items: center;
+        gap: 17px;
+    }
+
+    .slider_first_cell_center {
+        padding: 0;
+    }
+
+    .slider_first_cell_center h4 {
+        line-height: 20px;
+        max-width: 283px;
+        margin: 0 auto 36px;
+    }
+
+    .slider_first_cell_center h1 {
+        font-size: 44px;
+        line-height: 55px;
+        margin: 0 auto 36px;
+        padding: 0 25px;
+    }
+
+    .slider_first_cell_center p {
+        margin: 0px auto 40px;
+        max-width: 295px;
+        font-size: 16px;
+        margin: 0 auto 36px;
+    }
+
+    .slider_first_cell_center a {
+        border-radius: var(--Radius-s, 8px);
+        border: var(--Radius-Sharp, 1px) solid var(--Base-Base-White, #FAFAFA);
+        color: #FBFBFB;
+        font-family: Inter;
+        font-size: 12px;
+        font-style: normal;
+        font-weight: 600;
+        line-height: 100%;
+        letter-spacing: 0.48px;
+        text-transform: uppercase;
+        padding: 11px 16px;
+        width: fit-content;
+        margin: 0 auto 48px;
+    }
+
+    .main_logo {
+        max-width: 110px;
+        width: 100%;
+    }
+
+    .top_headbar.fixed,
+    .top_headbar {
+        padding: 11px 13px 25px 11px;
+    }
+
+    .result_perk_forms {
+        padding: 27px 20px 30px 20px;
+    }
+
+    .result_perk_forms h6 {
+        max-width: 216.201px;
+        margin: auto auto 16px;
+        line-height: 20px;
+    }
+
+    .result_perk_forms h2 {
+        font-size: 32px;
+    }
+
+    .result_perk_forms form {
+        gap: 12px;
+        margin-top: 38px;
+    }
+
+    .send_msg_form button {
+        border-radius: var(--Radius-s, 8px);
+        border: var(--Radius-Sharp, 1px) solid var(--Base-Base-Black, #0A0A0B);
+        background: transparent;
+        color: var(--Base-Base-Black, #0A0A0B);
+        font-size: 12px;
+        font-weight: 600;
+        letter-spacing: 0.48px;
+    }
+
+    .selling_home {
+        margin-top: 90px;
+    }
+
+    .selling_home_dls {
+        padding: 0 20px;
+    }
+
+    .selling_home_dls h2 {
+        font-size: 32px;
+        margin-bottom: 53px;
+        max-width: 306px;
+    }
+
+    .find_neighbor {
+        padding: 0;
+    }
+
+    .find_neighbor_img {
+        background-image: url(../img/mb_find.png);
+    }
+
+    .find_neighbor .slider_first_cell_center h6 {
+        margin-bottom: 26px;
+    }
+
+    .find_neighbor .slider_first_cell_center h2 {
+        font-size: 32px;
+        max-width: 263px;
+        margin: auto auto 30px;
+    }
+
+    .find_neighbor .slider_first_cell_center p {
+        line-height: 24px;
+        margin-bottom: 30px;
+    }
+
+    .input_forms_zip {
+        padding: 0 25px;
+    }
+
+    .find_neighbor .input_forms_zip input {
+        margin: auto auto 52px;
+    }
+
+    .real_estate_sec {
+        margin: 63px 00;
+    }
+
+    .real_estate_wrap {
+        flex-direction: column;
+        gap: 0;
+    }
+
+    .left_estate_wrap {
+        width: 100%;
+        max-width: 100%;
+        padding: 0 48px;
+    }
+
+    .right_estate_wrap {
+        width: 100%;
+        max-width: 100%;
+        text-align: center;
+    }
+
+    .right_estate_wrap h2 {
+        margin-bottom: 25px;
+    }
+
+    .right_estate_wrap p {
+        max-width: 336px;
+        margin: auto auto 25px;
+    }
+
+    .right_estate_wrap a {
+        font-weight: 700;
+    }
+
+    .left_slide_dls {
+        text-align: center;
+    }
+
+    .client_testimonial {
+        padding-left: 0;
+        margin-bottom: 78px;
+        margin-top: 50px;
+    }
+
+    .left_slide_dls h2 {
+        font-size: 32px;
+        max-width: 282px;
+        margin: auto auto 30px;
+    }
+
+    .left_slide_wrap {
+        min-height: auto;
+    }
+
+    .item_boxes {
+        min-height: auto;
+    }
+
+    .sli_aerrow_sec_mobile_sec {
+        display: flex;
+        width: 100%;
+        gap: 30px;
+        justify-content: center;
+    }
+
+    .frequen_sec {
+        max-width: 100%;
+        margin: 0 10px 78px;
+        width: auto;
+    }
+
+    .frequen_sec_dls .accordion {
+        gap: 0;
+    }
+
+    .frequen_sec_dls .accordion .row .col-6 {
+        width: 100%;
+    }
+
+    .frequen_sec_dls .accordion .row {
+        row-gap: 13px;
+    }
+
+    .frequen_sec_title h2 {
+        font-size: 24px;
+        margin-bottom: 30px;
+    }
+
+    .client_testi .owl-stage ,.about_client_testimonial .client_testi .owl-stage{
+        padding-bottom: 0px;
+    }
+
+    .slider_first {
+        padding-top: 109px;
+    }
+    .realEstateInvestorSection .realEstateInvestorRow{
+        flex-direction: column;
+        /* row-gap: 30px; */
+        text-align: center;
+    }
+    .realEstateInvestorSection{
+        margin-top: 360px;
+        padding: 45px 8px 46px 9px;
+    }
+    .realEstateInvestorSection .image{
+        top: 0;
+        margin-top: -326px;
+        z-index: -1;
+    }
+    /* .realEstateInvestorSection .image{
+        position: unset;
+        text-align: center;
+        margin-top: -100px;
+    } */
+    .realEstateInvestorSection .realEstateInvestorRow .contentBox,
+    .realEstateInvestorSection .realEstateInvestorRow .imageBox{
+        width: 100%;
+    }
+    .home_table_cell_center{
+        padding-top: 137px;
+        text-align: center
+    }
+    .home_table_cell_center h3{
+        color: var(--Base-Base-White, #FBFBFB);
+        text-align: center;
+        font-family: "Helvetica Neue";
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        letter-spacing: 2.56px;
+        text-transform: uppercase;
+        margin-bottom: 35px;
+    }
+    .home_table_cell_center h1{
+        color: var(--Base-Base-White, #FBFBFB);
+        text-align: center;
+        font-family: "Playfair Display";
+        font-size: 44px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 55px; /* 125% */
+        text-transform: capitalize;
+        margin: 0 auto 92px;
+        max-width: 202px;
+    }
+    .home_table_cell_center a{
+        padding: 11px 16px;
+        font-size: 12px;
+        line-height: 1.2;
+        margin: auto;
+        margin-bottom:98px;
+        display: block;
+        width: fit-content;
+         
+    }
+    .realEstateInvestorSection .subtitle{
+        margin-bottom: 25px
+    }
+    .realEstateInvestorSection .subtitle span{
+        color: var(--Base-Base-White, #FAFAFA);
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 16.44px; /* 102.75% */
+        letter-spacing: 3.136px;
+        text-transform: uppercase;
+    }
+    .realEstateInvestorSection .title{
+        margin-bottom: 25px
+    }
+    .realEstateInvestorSection .title h3{
+        color: var(--Base-Base-White, #FAFAFA);
+        text-align: center;
+        font-family: "Playfair Display";
+        font-size: 48px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: normal;
+    }
+    .realEstateInvestorSection .desc p{
+        color: var(--Base-Base-White, #FAFAFA);
+        text-align: center;
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px; /* 150% */
+    }
+    .full_height_100vh_home{
+        height: auto !important;
+        border-radius: 20px;
+    }
+  
+    .right_contact_banner_dls{
+        gap: 0;
+        padding: 0;
+        flex-direction:column;
+    }
+    .innner_contact a{
+        padding: 0;
+    }
+    .innner_contact h6{
+        margin-bottom: 10px;
+        margin-top: 20px;
+    }
+    .sli_aerrow_sec{
+        text-align: center;
+    }
+    .faQs .faq h3{
+        color: #000;
+        font-family: "Playfair Display";
+        font-size: 24px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 30px;
+        text-transform: capitalize;
+    }
+    .faQs .faq p{
+        color: var(--Base-Base-Black, #0C0D11);
+        font-family: Inter;
+        font-size: 16px;
+        font-style: normal;
+        font-weight: 400;
+        line-height: 24px;
+    }
+    
+}
+
+@media screen and (max-width: 576px) {}
+
+@media screen and (max-width: 375px) {}
