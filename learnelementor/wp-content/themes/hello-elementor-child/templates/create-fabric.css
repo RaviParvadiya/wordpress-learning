@@ -1,0 +1,432 @@
+/* Progress Section Styles */
+.progress-section {
+  position: relative;
+  width: 100%;
+  margin-bottom: 50px;
+}
+
+.progress-section__container {
+  max-width: 1250px;
+  position: relative;
+}
+
+/* Header Section */
+.progress-section__header {
+  /* position: relative; */
+  width: 100%;
+  height: 68px;
+  background: #2b6044;
+  border-radius: 5px 5px 0px 0px;
+  /* display: flex; */
+  /* align-items: center; */
+  /* justify-content: space-between; */
+  /* padding: 0; */
+}
+
+.progress-section__tab {
+  display: flex;
+  align-items: center;
+  justify-content: space-between  ;
+  padding: 0 90px;
+  padding-top: 10px;
+  /* position: relative; */
+  /* height: 68px; */
+}
+
+.progress-section__tab-spacer {
+  width: 231px; /* Same as active tab */
+  height: 58px;
+}
+
+.progress-section__tab-active {
+  /* position: absolute; */
+  /* top: 10px; */
+  /* left: 90px; */
+  width: 231px;
+  height: 58px;
+  background: #fff;
+  border-radius: 3px 3px 0px 0px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* z-index: 1; */
+}
+
+.progress-section__tab-title {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #000;
+  /* margin: 0; */
+}
+
+.progress-section__nav-link {
+  /* margin-left: 246px; */ /* active box to next tab */
+  color: #fff;
+}
+
+.progress-section__nav-link:last-child {
+  /* margin-left: 302px; */ /* to match Figma spacing */
+}
+
+.progress-section__nav-link:hover {
+  opacity: 0.8;
+}
+
+/* Content Section */
+.progress-section__content {
+  position: relative;
+  width: 100%;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  /* box-shadow: 0px 1px 3px #00000033; */
+  border-radius: 0px 0px 5px 5px;
+  padding: 50px 38px 38px 80px;
+}
+
+.progress-section__description {
+  font-family: "Questrial", sans-serif;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #555;
+  max-width: 533px;
+  margin: 0 0 40px 0;
+}
+
+/* Steps Section */
+.progress-section__steps {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  max-width: 1100px;
+  margin: 0 auto;
+}
+
+.progress-step {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  position: relative;
+  flex: 1;
+}
+
+.progress-step__icon {
+  width: 80px;
+  height: 80px;
+  background: #fff;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.2);
+  border-radius: 50%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin-bottom: 10px;
+}
+
+.progress-step__icon-img {
+  width: 36px;
+  height: 36px;
+  object-fit: contain;
+}
+
+.progress-step__title {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555;
+  text-align: center;
+  margin: 0;
+  max-width: 80px;
+}
+
+.progress-step__arrow {
+  position: absolute;
+  top: 25px;
+  right: -25px;
+  width: 30px;
+  height: 30px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.progress-step__arrow-img {
+  width: 30px;
+  height: 30px;
+  object-fit: contain;
+}
+
+/* Remove arrow from last step */
+.progress-step:last-child .progress-step__arrow {
+  display: none;
+}
+
+/* Responsive Design */
+/* @media (max-width: 1200px) {
+  .progress-section__container {
+    max-width: 95%;
+  }
+
+  .progress-section__steps {
+    gap: 15px;
+  }
+
+  .progress-step__arrow {
+    right: -20px;
+  }
+} */
+
+/* @media (max-width: 768px) {
+  .progress-section {
+    margin-top: 100px;
+  }
+
+  .progress-section__header {
+    flex-direction: column;
+    height: auto;
+    padding: 20px;
+    gap: 20px;
+  }
+
+  .progress-section__tab {
+    position: relative;
+    left: auto;
+    top: auto;
+    width: auto;
+    min-width: 200px;
+  }
+
+  .progress-section__nav {
+    margin-left: 0;
+    gap: 20px;
+  }
+
+  .progress-section__content {
+    height: auto;
+    padding: 30px 20px;
+  }
+
+  .progress-section__steps {
+    flex-direction: column;
+    gap: 30px;
+  }
+
+  .progress-step__arrow {
+    position: relative;
+    top: auto;
+    right: auto;
+    transform: rotate(90deg);
+    margin: 10px 0;
+  }
+} */
+
+/* @media (max-width: 480px) {
+  .progress-section__nav {
+    flex-direction: column;
+    gap: 10px;
+    text-align: center;
+  }
+
+  .progress-section__description {
+    font-size: 12px;
+    line-height: 18px;
+  }
+} */
+
+/* section 2 */
+.image-section__container {
+  max-width: 1052px;
+}
+
+.image-section__heading {
+  text-align: center;
+  margin-bottom: 50px;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 26px;
+  line-height: 16px;
+}
+
+.image-section__upload-image {
+  display: flex;
+  margin-bottom: 20px;
+  gap: 10px;
+}
+
+.image-section__btn {
+  width: 220px;
+  height: 70px;
+  background-color: #ccc;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  color: #999;
+  cursor: pointer;
+}
+
+.image-section__upload-image a {
+  text-decoration: none;
+  color: #999;
+}
+
+.image-section__placeholder {
+  max-height: 70px;
+  width: 822px;
+  background: #fff;
+  padding-top: 27px;
+  padding-bottom: 27px;
+  padding-left: 30px;
+  border: 2px dashed #2b6044;
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #2b6044;
+}
+
+.image-section__checkbox {
+  text-align: center;
+  margin-bottom: 40px;
+}
+
+.image-section__checkbox input[type="checkbox"] {
+  width: 20px;
+  height: 20px;
+  margin: 0;
+  margin-right: 10px;
+}
+
+.image-section__checkbox label {
+  vertical-align: top;
+}
+
+/* custom checkbox */
+.custom-checkbox--image-section {
+  justify-content: center;
+  margin-bottom: 40px;
+}
+
+.custom-checkbox {
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+  user-select: none;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #000;
+}
+
+.custom-checkbox input[type="checkbox"] {
+  display: none; /* Hide the native checkbox */
+}
+
+.custom-checkbox .checkmark {
+  width: 20px;
+  height: 20px;
+  border: 2px solid #666;
+  background: #fff;
+  margin-right: 10px;
+  position: relative;
+  box-sizing: border-box;
+}
+
+/* Checked state */
+/* first way with position */
+/* .custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 5px;
+  top: 7.45px;
+  width: 13px;
+  height: 7.35px;
+  background: url("http://learnthemes.local/wp-content/themes/weave/assets/images/down_2.png")
+    no-repeat center center;
+  background-size: contain;
+  border-width: 0 3px 3px 0;
+  transform: rotate(-11.3deg);
+  pointer-events: none;
+} */
+
+/* Second way without position */
+.custom-checkbox input[type="checkbox"]:checked + .checkmark::after {
+  content: "";
+  position: absolute;
+  left: 0; /* Center in the box */
+  top: 0;
+  width: 20px; /* Match .checkmark size */
+  height: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: url("http://learnthemes.local/wp-content/themes/weave/assets/images/down_2.png")
+    no-repeat center center;
+  background-size: contain;
+  background-size: 13px 7.35px; /* Your PNG size */
+  transform: rotate(-11.3deg);
+  pointer-events: none;
+}
+
+.custom-checkbox input[type="checkbox"]:checked + .checkmark {
+  border-color: #2b6044;
+  border-width: 2px;
+}
+/* End custom checkbox */
+
+.image-section__notes {
+  margin-bottom: 30px;
+}
+
+.image-section__notes-container {
+  max-width: 1062px;
+}
+.image-section__notes-card {
+  background-color: #fff;
+  box-shadow: 0px 1px 3px 0px #00000033;
+  /* height: 338px; */
+  /* padding-top: 30px;
+  padding-left: 40px; */
+}
+
+.custom-list {
+  padding-top: 30px;
+  padding-bottom: 36px;
+  padding-left: 40px;
+}
+
+.custom-list li {
+  position: relative;
+  padding-left: 27.65px; /* leave space for the marker */ /* (marker image width + gap between image and text) */
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 34px;
+}
+
+.custom-list li::before {
+  content: "";
+  position: absolute;
+  top: 50%; /* vertical center */
+  left: 0;
+  transform: translateY(-50%) rotate(-90deg); /* center and rotate */
+  width: 13px;
+  height: 7.35px;
+  background-image: url("http://learnthemes.local/wp-content/themes/weave/assets/images/down_2.png");
+  background-size: contain;
+  background-repeat: no-repeat;
+  opacity: 1;
+}
+
+.image-section__heading--lh {
+  line-height: 34px;
+  margin-bottom: 20px;
+}
+
+.image-section__divider-top {
+  border-top: 1px solid #0000001a;
+  margin-bottom: 100px;
+}

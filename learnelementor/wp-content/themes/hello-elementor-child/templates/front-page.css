@@ -1,0 +1,446 @@
+.main-banner {
+  width: 100vw;
+  height: 500px;
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  position: relative;
+  display: flex;
+  align-items: center; /* left align text */
+  padding-left: 360px;
+  /* margin-left: calc(-1 * ((100vw - 100%) / 2)); */
+}
+
+.main-banner {
+  width: 100%;
+}
+
+.main-banner__content {
+  max-width: 600px;
+}
+
+.main-banner h2 {
+  font-weight: 400;
+  font-size: 40px;
+  color: #2b6044;
+  margin: 0 0 20px 0;
+  max-width: 90vw; /* prevent overflow on small screens */
+  word-break: break-word;
+}
+
+.main-banner p {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 20px;
+  color: #555;
+  margin: 0 0 20px 0;
+}
+
+.main-banner a {
+  display: inline-block;
+  background: #2b6044;
+  color: #fff;
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  padding: 11px 25px;
+  border-radius: 3px;
+  transition: background 0.2s;
+}
+.main-banner a:hover {
+  background: #1e4230;
+}
+
+.main-section {
+  margin-bottom: 100px;
+}
+
+.main-section__card {
+  display: flex;
+  justify-content: space-between;
+  /* gap: 80px; */
+}
+
+.main-card__image {
+  /* max-width: 380px;
+  max-height: 380px;
+  height: 380px;
+  width: 380px; */
+  width: 150%;
+  max-width: 380px;
+  aspect-ratio: 1 / 1; /* keeps it square */
+  background-position: center;
+  background-size: cover;
+  background-repeat: no-repeat;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-card__content {
+  width: 150%;
+  max-width: 380px;
+  /* aspect-ratio: 1 / 1; */
+  background: #fbf2f2;
+  border-bottom-right-radius: 10px;
+  border-bottom-left-radius: 10px;
+  box-shadow: 0px 0px 10px 5px #00000003;
+  padding-left: 30px;
+  padding-top: 30px;
+  padding-bottom: 30px;
+}
+
+.main-card__label {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  color: #2b6044;
+}
+
+.main-card__title {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 22px;
+  color: #000;
+  margin-top: 10px;
+  margin-bottom: 20px;
+}
+
+.main-card__desc {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #2b6044;
+  margin-right: 180px;
+}
+
+.main-card__ellipse {
+  display: flex;
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  background: #2b6044;
+  justify-content: center;
+  align-items: center;
+  padding: 0;
+  border: none;
+  justify-self: end;
+  margin-right: 30px;
+  margin-top: 30px;
+}
+
+.main-card__ellipse-icon {
+  width: 18px;
+  height: 18px;
+  transform: rotate(-90deg);
+}
+
+.showcase-section {
+  width: 100%;
+  margin-bottom: 100px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+}
+
+.showcase-section__header {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 59px; /* space between header and grid */
+}
+
+.showcase-section__ellipse {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 60px;
+  height: 60px;
+  border-radius: 50%;
+  background: #2b6044;
+  margin-bottom: 25px;
+}
+
+.showcase-section__title {
+  font-weight: 400;
+  font-size: 30px;
+  line-height: 16px;
+  color: #000;
+}
+
+.showcase-section__grid {
+  display: grid;
+  grid-template-columns: repeat(5, 230px);
+  grid-template-rows: repeat(2, 318px);
+  gap: 43px;
+  justify-content: center;
+}
+
+.showcase-card {
+  background: #fff;
+  display: flex;
+  flex-direction: column;
+  /* overflow: hidden; */
+  height: 318px;
+  width: 230px;
+}
+
+.showcase-card__image-wrapper {
+  position: relative;
+  width: 100%;
+  height: 230px; /* same as .showcase-card__image */
+  /* overflow: hidden; */
+}
+
+.showcase-card__image {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+}
+
+.showcase-card__label-rect {
+  position: absolute;
+  top: 10px; /* adjust as needed */
+  left: 0;
+  background: #fff;
+  border-radius: 0 30px 30px 0;
+  width: 106px;
+  height: 26px;
+  display: flex;
+  align-items: center;
+  padding-left: 10px;
+  box-shadow: 0 2px 8px rgba(0, 0, 0, 0.04); /* optional for subtle depth */
+}
+
+.showcase-card__label-text {
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #2b6044;
+}
+
+.showcase-card__content {
+  padding-top: 20px;
+  padding-left: 5px;
+  /* padding-right: 90px; */
+}
+
+.showcase-card__title {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000;
+  margin: 0 0 10px 0;
+}
+
+.showcase-card__meta {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.showcase-card__brand {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  height: 16px;
+}
+
+.showcase-card__brand-icon {
+  width: 16px;
+  height: 16px;
+  display: inline-block;
+}
+
+.showcase-card__brand-label {
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  font-weight: 400;
+  line-height: 16px;
+  color: #000;
+}
+
+.showcase-card__price-group {
+  display: flex;
+  align-items: center;
+  gap: 9px;
+  height: 16px;
+}
+
+.showcase-card__price {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2b6044;
+  line-height: 16px;
+}
+
+.showcase-card__price--text span {
+  text-decoration: line-through;
+  color: #aaa;
+}
+
+.showcase-card__price-arrow {
+  width: 12px;
+  height: 7px;
+  transform: rotate(-90deg);
+  display: inline-block;
+}
+
+.showcase-card__price-discount {
+  font-family: "Questrial", sans-serif;
+  font-size: 18px;
+  font-weight: 400;
+  color: #2b6044;
+  line-height: 16px;
+}
+
+.showcase-card__label-rect--best {
+  top: 0;
+  left: 0;
+  background: #000;
+  width: 32px;
+  height: 32px;
+  border-radius: 0;
+}
+
+.showcase-card__label-text--best {
+  color: #fff;
+  font-size: 16px;
+}
+
+.showcase-section__grid--best {
+  grid-template-columns: repeat(5, 1fr);
+  grid-template-rows: none;
+}
+
+.showcase-section--testimonials {
+  background-color: #f9f9f9;
+  /* height: 1981px; */
+  padding-top: 100px;
+  margin-bottom: 94px;
+}
+
+.showcase-card__mask-tmp {
+  width: 294px;
+  height: 294px;
+  overflow: hidden; /* This is the key! */
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.showcase-card__image--testimonial-tmp {
+  width: 600px; /* Or 100% if you want it responsive */
+  height: 326px;
+  position: absolute;
+  left: -139px; /* Negative to shift the image into view as in Figma */
+  top: -21px; /* Adjust as needed to match Figma's crop */
+  object-fit: cover; /* Ensures the image covers the area, optional if you want exact Figma crop */
+}
+
+.showcase-card__mask {
+  width: 294px;
+  height: 294px;
+  overflow: hidden;
+  position: relative;
+  margin-bottom: 15px;
+}
+
+.showcase-card__image--testimonial {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  object-position: center;
+  position: absolute;
+  left: 0;
+  top: 0;
+}
+
+.showcase-section__grid--testimonials {
+  grid-template-columns: repeat(4, 294px);
+  grid-template-rows: repeat(3, 478px);
+  gap: 49px;
+}
+
+.showcase-card--testimonial {
+  background: none;
+  height: auto;
+  width: auto;
+}
+
+.showcase-card__label-row {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 5px;
+  margin-top: -5px;
+  margin-bottom: 10px;
+}
+
+.showcase-card__label--testimonial {
+  margin-bottom: 0 !important;
+}
+.showcase-card__label-row img {
+  display: inline-block;
+  vertical-align: middle;
+  align-self: center;
+}
+
+.showcase-card__content--testimonial {
+  background-color: #fff;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-bottom: 20px;
+  padding-left: 0;
+}
+
+.showcase-card__label {
+  display: inline-block;
+  background: #000;
+  color: #fff;
+  border-radius: 2px;
+  font-family: "Questrial", sans-serif;
+  font-size: 12px;
+  line-height: 16px;
+  width: 97px;
+  height: 18px;
+  text-align: center;
+  vertical-align: middle;
+  padding: 1px 0; /* adjust as needed for vertical centering */
+  /* margin-top: 21px; */
+  margin-bottom: 10px;
+}
+
+.centered-text {
+  /* margin: 10px 33px 0px 34px; */
+  max-width: 241px;
+  text-align: center;
+  color: #aaa;
+  font-family: "Questrial", sans-serif;
+  font-size: 15px;
+  line-height: 16px;
+}
+
+.showcase-card__line {
+  display: block; /* Makes the span behave like a div/line */
+  width: 25px; /* Line length */
+  height: 0; /* No height, just a border */
+  border-top: 1px solid #000; /* The actual line */
+  margin: 15px auto; /* 15px space above and below, auto centers horizontally */
+}
+
+.showcase-section__footer {
+  margin-top: 50px;
+  margin-bottom: 122px;
+}
+
+.showcase-section__footer a {
+  text-decoration: underline;
+  color: #000;
+  font-size: 20px;
+  line-height: 16px;
+  font-weight: 400;
+}

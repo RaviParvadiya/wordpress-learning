@@ -1,0 +1,331 @@
+.order-section {
+  margin-bottom: 278px;
+}
+
+.order-section__container {
+  max-width: 1250px !important;
+}
+
+.order-section__notice {
+  width: 100%;
+  height: 54px;
+  background: #2b6044;
+  border-radius: 5px;
+  display: flex;
+  align-items: center; /* vertical center */
+  justify-content: center; /* horizontal center */
+  padding: 0;
+  margin-bottom: 20px;
+  text-align: center; /* center text if it wraps */
+}
+
+.order-section__notice p {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 16px;
+  color: #fff;
+}
+
+/* GRID LAYOUT */
+.order-section__grid {
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  gap: 65px;
+  align-items: start;
+}
+
+.order-section__left img {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Optional: max width control for right side */
+.order-section__right {
+  max-width: 585px; /* 1250 - 600 - 65 = 585 */
+}
+
+.order-section__right-info {
+  display: flex;
+  gap: 10px;
+  flex-direction: row;
+  margin-bottom: 16px;
+}
+
+.order-section__right-info > p {
+  display: inline;
+  margin: 0;
+  margin-top: 5px;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  text-align: center;
+  color: #000;
+}
+
+.order-section__right-info span {
+  padding: 5px 13px;
+  border-radius: 3px;
+  background: #c5d3cb;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 5px;
+}
+
+.order-section__right-info--text {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  text-align: center;
+  color: #000;
+  margin: 0;
+}
+
+.order-section__right-options {
+  margin-bottom: 15px;
+}
+
+.order-section__right-row {
+  display: flex;
+  flex-direction: row;
+  gap: 10px;
+}
+
+.order-section__right-options-card {
+  background: #fff;
+  box-shadow: 0px 0px 0px 1px rgba(0, 0, 0, 0.1);
+  border-radius: 5px;
+  padding-top: 15px;
+  padding-left: 15px;
+  padding-bottom: 31px;
+  padding-right: 46px;
+}
+
+.order-section__right-options-card--active {
+  box-shadow: 0px 0px 0px 2px #2b6044 !important;
+}
+
+.order-section__right-options-card p {
+  margin: 0;
+  margin-top: 10.56px;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+}
+
+.order-section__right-options-card h5 {
+  margin: 0;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 24px;
+  color: #666666;
+}
+
+.order-section__right-dropdown {
+  margin-bottom: 30px;
+}
+.custom-dropdown {
+  position: relative;
+  width: 621px;
+  height: 28px;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  padding: 0 16px;
+  box-sizing: border-box;
+  cursor: pointer;
+}
+
+.custom-dropdown__label {
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #000;
+  flex: 1;
+  text-align: left; /* or center if you want */
+}
+
+.custom-dropdown__arrow {
+  width: 13px;
+  height: 7.35px;
+  margin-left: 8px;
+}
+
+.order-section__right-details {
+  margin-bottom: 30px;
+}
+
+.order-section__details-title {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 14px;
+}
+
+.order-section__details-card {
+  position: relative;
+  width: 621px;
+  box-sizing: border-box;
+  background: #fff;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  display: flex;
+  flex-direction: row;
+  gap: 15px;
+  align-items: center;
+  padding: 20px;
+}
+
+.order-section__card-content {
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 16px;
+  color: #000;
+  margin-bottom: 15px;
+}
+
+.order-section__card-content p {
+  font-size: 13px;
+}
+
+.order-section__card-btn {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+  text-decoration: none;
+  background: #2b6044;
+  border-radius: 5px;
+  font-family: "Questrial";
+  font-weight: 400;
+  font-size: 13px;
+  line-height: 16px;
+  color: #fff;
+  padding: 6px 15px;
+}
+
+.order-section__right-info--qty {
+  margin-bottom: 15px !important;
+}
+
+.custom-checkbox--qty {
+  font-size: 13px;
+  color: #555555;
+  margin-bottom: 5px;
+}
+
+.custom-checkbox__checkmark--qty {
+  width: 24px !important;
+  height: 24px !important;
+}
+
+.custom-checkbox--qty input[type="checkbox"]:checked + .checkmark::after {
+  /* width: 24px !important; */
+  height: 24px !important;
+}
+
+/* quantity input */
+.quantity-selector {
+  display: flex;
+  width: 108px;
+  height: 32px;
+  border: 1px solid #ccc;
+  border-radius: 0;
+  background: #fff;
+  overflow: hidden;
+  font-family: "Questrial", sans-serif;
+}
+
+.quantity-btn {
+  width: 31px;
+  height: 32px;
+  border: none;
+  background: #fff;
+  font-size: 1.5rem;
+  color: #000;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  padding: 0;
+  /* Remove outline for cleaner look, but keep for accessibility if needed */
+}
+
+.quantity-btn--minus {
+  border-right: 0; /* No right border, handled by parent */
+}
+
+.quantity-value {
+  width: 46px;
+  height: 32px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Questrial", sans-serif;
+  font-size: 13px;
+  color: #555;
+  border-left: 1px solid #ccc;
+  border-right: 1px solid #ccc;
+  background: #fff;
+  line-height: 13px;
+  padding: 0;
+}
+
+.progress-section__design {
+  margin-bottom: 97px;
+}
+
+.progress-steps_container {
+  max-width: 1307px !important;
+}
+
+/* Steps Section */
+.progress-section__row {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-section__col {
+  display: flex;
+  flex-direction: row;
+}
+
+.progress-section__col-icon {
+  width: 80px;
+  height: 80px;
+  box-shadow: 0px 1px 3px 0px #00000033;
+  border-radius: 50%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.progress-section__col-title {
+  margin: 0;
+  font-family: "Questrial", sans-serif;
+  font-weight: 400;
+  font-size: 12px;
+  line-height: 16px;
+  color: #555555;
+  text-align: center;
+  max-width: 80px;
+}
+
+.progress-section__col-next {
+  margin-top: 25px;
+  margin-right: 46px;
+  margin-left: 46px;
+}
