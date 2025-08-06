@@ -1,0 +1,356 @@
+<div class="cargo-container">
+  <div class="cargo-container-title">Container Specifications</div>
+
+  <div class="cargo-perform-container">
+    <div class="cargo-search-container">
+      <div class="sr-searchbar-title">
+        Please input PIL container number to get the container weight
+        information
+      </div>
+
+      <div class="search-bar">
+        <input class="search-field" id="cargo-search" placeholder="Search" />
+        <div class="search-icon-cnt">
+          <span class="search-icon"></span>
+        </div>
+      </div>
+
+      <div id="cargo-search-btn">Search</div>
+    </div>
+
+    <div class="cargo-list-result">
+      <table class="cargo-table">
+        <thead>
+          <tr>
+            <th><span>Container Number</span></th>
+            <th><span>Container Size</span></th>
+            <th><span>Container Type</span></th>
+            <th><span>Tare Weight</span></th>
+            <th><span>Pay Load</span></th>
+          </tr>
+        </thead>
+        <tbody></tbody>
+      </table>
+    </div>
+  </div>
+</div>
+<style>
+  .cargo-container {
+    position: relative;
+    display: block;
+    font-family: "Rubik", sans-serif;
+    overflow-x: hidden;
+  }
+
+  .cargo-container-title {
+    text-align: center;
+    font-size: 14px;
+    color: white;
+    background: #04246a;
+    padding-block: 10px;
+  }
+
+  .cargo-perform-container {
+    position: relative;
+    background: #ffffff;
+    padding: 24px;
+  }
+
+  .cargo-search-container {
+    max-width: 520px;
+    margin: 0 auto;
+    text-align: center;
+  }
+
+  .cargo-container .sr-searchbar-title {
+    color: #04246a;
+  }
+
+  .sr-searchbar-title {
+    font-weight: 400;
+    color: #363636;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif !important;
+    font-style: normal !important;
+    margin: 0 0 6px 0;
+  }
+
+  .search-bar {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+  }
+
+  .search-bar input.search-field {
+    border: 0px !important;
+    width: 100%;
+    line-height: 0;
+    font-size: 12px;
+  }
+
+  .search-bar input:focus.search-field {
+    border: 0px !important;
+    width: 100%;
+    line-height: 0;
+    font-size: 12px;
+  }
+
+  .search-bar input::placeholder {
+    color: #dadada;
+    opacity: 1; /* Firefox */
+  }
+
+  .search-bar input::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #dadada;
+  }
+  .search-bar input:focus {
+    border: 1px solid #ffffff !important;
+    outline: none !important;
+    border-radius: 0px !important;
+  }
+
+  .search-bar .search-icon-cnt {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+  }
+
+  .search-bar .search-icon {
+    content: "";
+    background: url(http://localhost/pilshipelementor/wp-content/uploads/2025/07/grey-search-icon.svg)
+      no-repeat !important;
+    width: 14px;
+    height: 16px;
+    display: block;
+  }
+
+  #cargo-search-btn {
+    font-family: "Rubik", sans-serif !important;
+    background: #ed1c24;
+    color: white;
+    width: 200px;
+    text-align: center;
+    padding: 8px;
+    font-size: 14px;
+    font-weight: 400;
+    margin: 10px auto;
+    transition: 0.3s all;
+    cursor: pointer;
+  }
+
+  #cargo-search-btn:hover {
+    color: white !important;
+    background: #c41016;
+  }
+
+  .cargo-list-result {
+    position: relative;
+    padding-top: 24px;
+    overflow-x: scroll;
+  }
+
+  .cargo-list-result .cargo-table {
+    min-width: 1300px;
+  }
+
+  .cargo-table {
+    display: none;
+  }
+</style>
+
+<!-- Fleet List -->
+<div class="fleet-search-container">
+  <div class="sr-searchbar-title">Search Vessel Name</div>
+
+  <div class="search-bar">
+    <input class="search-field" id="fleet-search" placeholder="Search" />
+    <div class="search-icon-cnt">
+      <span class="search-icon"></span>
+    </div>
+  </div>
+</div>
+<style>
+  .sr-searchbar-title {
+    font-weight: 400;
+    color: #363636;
+    font-size: 14px;
+    font-family: "Rubik", sans-serif !important;
+    font-style: normal !important;
+    margin: 0 0 6px 0;
+  }
+
+  .search-bar {
+    display: flex;
+    background: #ffffff;
+    justify-content: space-between;
+    padding: 8px 15px;
+    border: 1px solid #ccc;
+  }
+
+  .search-bar input.search-field {
+    border: 0px !important;
+    width: 100%;
+    line-height: 0;
+    font-size: 12px;
+  }
+
+  .search-bar input:focus.search-field {
+    border: 0px !important;
+    width: 100%;
+    line-height: 0;
+    font-size: 12px;
+  }
+
+  .search-bar input::placeholder {
+    color: #dadada;
+    opacity: 1; /* Firefox */
+  }
+
+  .search-bar input::-ms-input-placeholder {
+    /* Edge 12-18 */
+    color: #dadada;
+  }
+  .search-bar input:focus {
+    border: 1px solid #ffffff !important;
+    outline: none !important;
+    border-radius: 0px !important;
+  }
+
+  .search-bar .search-icon-cnt {
+    background: #ffffff;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    padding: 0 0 0 20px;
+  }
+
+  .search-bar .search-icon {
+    content: "";
+    background: url(http://localhost/pilshipelementor/wp-content/uploads/2025/07/grey-search-icon.svg)
+      no-repeat !important;
+    width: 14px;
+    height: 16px;
+    display: block;
+  }
+</style>
+
+<div class="port-list-dropdown">
+  <div id="spinner" class="loader local-office"></div>
+  <input type="text" id="port-search" placeholder="Country or city" />
+  <div
+    id="port-list-results"
+    class="port-list-dropdown-content"
+    style="display: none"
+  ></div>
+</div>
+<style>
+  .port-list-dropdown {
+    position: relative;
+    width: 100%;
+    min-width: 300px;
+  }
+  .footer-dpd.port-list-dropdown {
+    max-width: 300px;
+  }
+  #port-search,
+  #footer-port-search {
+    width: 100%;
+    padding: 8px 16px;
+    font-size: 12px;
+    font-family: "Rubik", sans-serif;
+    line-height: 14px;
+    box-sizing: border-box;
+    border: 1px solid #808080;
+  }
+  #port-search::placeholder,
+  #footer-port-search::placeholder {
+    opacity: 0.5;
+    color: #808080;
+  }
+  .port-list-dropdown-content {
+    display: none;
+    position: absolute;
+    background-color: #ffffff;
+    min-width: 100%;
+    border: 1px solid #808080;
+    z-index: 6;
+    max-height: 200px;
+    overflow-y: auto;
+    box-shadow: 0px 4px 8px rgba(0, 0, 0, 0.1);
+  }
+  .footer-dpd .port-list-dropdown-content {
+    bottom: 100%;
+  }
+  .port-list-dropdown-content .port-item {
+    padding: 8px 16px;
+    cursor: pointer;
+    color: #808080;
+    font-size: 12px;
+    font-family: "Rubik", sans-serif;
+    line-height: 14px;
+  }
+  .port-list-dropdown-content .port-item:hover {
+    background-color: #f1f1f1;
+  }
+  .port-list-dropdown-content .highlight {
+    font-weight: bold;
+  }
+</style>
+
+<div class="newsroom-pagination">
+  <a href="#" class="newsroom-prev" data-page="prev"></a
+  ><a href="#" class="newsroom-page active" data-page="1">1</a
+  ><a href="#" class="newsroom-page" data-page="2">2</a
+  ><a href="#" class="newsroom-page" data-page="3">3</a
+  ><a href="#" class="newsroom-page" data-page="4">4</a
+  ><span class="ellipsis">...</span
+  ><a href="#" class="newsroom-page" data-page="10">10</a
+  ><a href="#" class="newsroom-page" data-page="11">11</a
+  ><a href="#" class="newsroom-page" data-page="12">12</a
+  ><a href="#" class="newsroom-next" data-page="next"></a>
+</div>
+<style>
+  .newsroom-pagination {
+    justify-content: center;
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    gap: 18px;
+    margin-top: 30px;
+    position: relative;
+  }
+  .newsroom-pagination .newsroom-prev {
+    background: url(http://localhost/pilshipelementor/wp-content/uploads/2025/07/newsroom-pagin-left-arrow.svg)
+      no-repeat;
+    width: 25px;
+    height: 13px;
+    transition: 0.3s all;
+  }
+
+  .newsroom-pagination a {
+    color: #80808080;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+    transition: 0.3s all;
+  }
+  .newsroom-pagination a.newsroom-page:hover,
+  .newsroom-pagination a.newsroom-page.active {
+    color: #0072bc;
+    font-family: "Rubik", sans-serif;
+    font-size: 16px;
+    font-weight: 500;
+  }
+  .newsroom-pagination .newsroom-next {
+    background: url(http://localhost/pilshipelementor/wp-content/uploads/2025/07/newsroom-pagin-right-arrow.svg)
+      no-repeat;
+    width: 25px;
+    height: 13px;
+    transition: 0.3s all;
+  }
+</style>
